@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+IT+Moderna:wght@100..400&family=Quicksand:wght@300..700&display=swap');
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #000;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  font-family: 'Quicksand', serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 10px 20px;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: 0.8s ease-in-out;
+}
+
+.nav-links a:hover {
+  background-color: #FFC107;
+  color: black;
+  border-radius: 5px;
+}
+
+hr{
+  color: #FFC107;
+}
+
+.sub-nav button{
+  background-color: #FFC107;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Quicksand', serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 18px;
+
+}
+
+.image-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-color: #f1f1f1;
+}
+.image-section img{
+  width: 100%;
+  height: 100%;
+}
+.hero {
+  background: url('images/hotel2.jpg') no-repeat center center/cover;
+  backdrop-filter: blur(0.7);
+  height: 100vh;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+  color: gold;
+  padding: 20px;
+  position: relative;
+}
+
+/* Text Styling */
+.hero-text {
+  max-width: 700px;
+  padding: 20px;
+  font-family: "Bebas Neue", serif;
+  border-radius: 10px;
+  text-align: left;
+}
+
+
+
+.hero-text p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-text h1 {
+      font-size: 24px;
+  }
+  .hero-text p {
+      font-size: 16px;
+  }
+}
+
+
+.rooms-section {
+  padding: 4rem 2rem;
+  background-color: black;
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.rooms-section h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color:#FFC107;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+.rooms-container {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.room-card {
+  width: 100%;
+  
+  background: black;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(211, 211, 211, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
+}
+
+.room-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 3px solid #c19a6b;
+  transition: transform 0.3s ease;
+}
+
+.room-image:hover {
+  transform: scale(1.05);
+}
+
+.room-content {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.room-content h3 {
+  color: #FFC107;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .rooms-container {
+      grid-template-columns: 1fr;
+  }
+  
+  .room-image {
+      height: 200px;
+  }
+}
+
+
+
+.container {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.section {
+    width: 45%;
+    
+    padding: 20px;
+    border-radius: 10px;
+}
+.section img {
+    width: 100%;
+    border-radius: 10px;
+}
+.section h2 {
+    text-align: center;
+    color: #f0a500;
+}
+.section p {
+    text-align: center;
+}
+.testimonial-section {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.testimonial-title {
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+.testimonial {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.testimonial p{
+  color: #FFC107;
+}
+.customer-name {
+  font-weight: bold;
+  color: #FFC107;
+}
+.customer-review {
+  margin: 5px 0;
+}
+.rating {
+  color: #ffd700;
+}
+.logo {
+  width: 100px;
+  margin-top: 20px;
+}
+
+
+a {
+  color: #FFC107; /* Gold color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.contact-us-section {
+  background-color: black; /* Light gray background */
+  border-bottom: 1px solid black;
+}
+
+.contact-details {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: left;
+}
+
+.contact-details li {
+  margin-bottom: 0.5rem;
+  color: #FFC107;
+}
+
+
+.footer-sec
+ {
+  background-color: #FFC107; 
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+
+.navigation-links {
+  margin-bottom: 1.5rem;
+}
+
+.navigation-linkis a {
+  
+  padding: 10px;
+  margin: 0 0.5rem;
+  color: #000;
+}
+
+.footer-note {
+  color: #FFC107;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+footer{
+ margin-top: 50px;
+}
