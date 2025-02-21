@@ -5,6 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Navbar</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Animation for sections */
+.rooms-section, .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 0.5s;
+}
+
+/* Animation for individual boxes */
+.room-card, .section {
+    opacity: 0;
+    transform: translateX(100px); /* Initially off-screen */
+    animation: slideIn 1.5s forwards;
+}
+
+/* Delay for each room and section */
+.room-card:nth-child(1), .section:nth-child(1) {
+    animation-delay: 1s;
+    animation-direction: normal;
+}
+
+.room-card:nth-child(2), .section:nth-child(2) {
+    animation-delay: 1.3s;
+    animation-direction: normal;
+}
+
+.room-card:nth-child(3), .section:nth-child(3) {
+    animation-delay: 1.6s;
+    animation-direction: normal;
+}
+
+.room-card:nth-child(4), .section:nth-child(4) {
+    animation-delay: 1.9s;
+    animation-direction: normal;
+}
+
+/* Keyframes for fading in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Keyframes for sliding in from the right */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(100px); /* Start from the right */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* End in original position */
+    }
+}
+
+    </style>
     
 </head>
 <body>
