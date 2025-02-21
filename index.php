@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Navbar</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
 <?php include 'header.php'; ?>
@@ -92,7 +93,11 @@
       <img class="logo" src="logo.png" alt="Arunta Riverside Boutique Logo">
   </div>
 <?php include 'footer.php'; ?>
-  
+
+<script src="animations.js">
+
+</script>
+
 </body>
 </html>
 
