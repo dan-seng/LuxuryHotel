@@ -46,7 +46,7 @@
 </nav>
 
 <div class="sub-nav">
-    <button onclick="window.location.href='book.php'"
+    <button onclick="window.location.href='rooms.php'"
     >Book now</button>
 </div>
 
