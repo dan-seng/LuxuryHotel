@@ -12,12 +12,4 @@ If you want to act as an admin and manage customer information (such as editing 
 
  Thank you!
 
-## 📝 Contributors  
-- **Daniel Gidey** - EITM/TUR181534/16
-- **Hluf G/Meskel** - EITM/TUR181538/16 
-- **Hermela Teklay** - EITM/TUR181556/16
-- **Eden Kidane** - EITM/TUR181647/16
-- **Meron Embaye** - EITM/TUR181583/16  
-- **Bethelihem Habte** - UGR/178295/12
-
 
